@@ -12,7 +12,7 @@ assertEqual("lighthouse labs", "Bootcamp");
 assertEqual(1,1);
 
 const head = function(arr) {
-return arr[0]
+  return arr[0]
 }
 
 
