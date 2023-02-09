@@ -14,7 +14,12 @@ const eqArrays = function (arr1, arr2) {
   return true;
 };
 
-const words = ["hello", "world", "lighthouse"];
-without(words, ["lighthouse"]); // no need to capture return value for this test case
-// Make sure the original array was not altered by the without function
-assertArraysEqual(words, ["hello", "world", "lighthouse"]);
+const without = function(array1, array2) {
+  let filteredArray = [];
+  for (const element of array1) {
+    if (!array2.includes(element)) {
+      filteredArray.push(element);
+    }
+  }
+  return filteredArray;
+};
