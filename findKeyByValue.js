@@ -14,9 +14,15 @@ const assertEqual = function(actual, expected) {
 // use object.keys and a for...of loop
 
 let findByKeyValue = function (object, value) {
-  for(let key of object){
-    if (value === key) {
-      console.log (value);
+  const cycle = object.entries(object)
+
+  for(let [key, value] of cycle){
+    if (key === value){
+    
+      return('key', key)
+
+    console.log(`${value}, ${key} `)
+
     }
   }
 }
