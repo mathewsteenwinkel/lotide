@@ -10,9 +10,6 @@ const assertEqual = function(actual, expected) {
 //If no key is found, then it should return undefined.
 
 const findKey = function (object, callback){
-//  if (object.key1 === true){
-//   callback
-//  }
 for (let key in object) {
   // console.log('key', key)
   // console.log('value', object[key])
