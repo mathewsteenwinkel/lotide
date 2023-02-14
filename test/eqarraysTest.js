@@ -1,4 +1,4 @@
-const assertEqual = require('../eqArrays');
+const eqArrays = require('../eqArrays');
 
 
 //test code

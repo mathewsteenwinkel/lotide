@@ -1,4 +1,4 @@
-const assertEqual = require('../tail');
+const tail = require('../tail');
 
 //test code
 assertEqual("lighthouse labs", "Bootcamp");
